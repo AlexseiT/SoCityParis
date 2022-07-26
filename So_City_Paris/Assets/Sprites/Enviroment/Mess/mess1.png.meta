@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e26c6c82d3291ab43ba673456ef9369f
+guid: 122f74276fa9d9344835643d803773ad
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: medium hight_0
+      name: mess1_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 325
-        width: 29
-        height: 47
+        x: 0
+        y: 30
+        width: 20
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,20 +120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14bdad321b4dffb4a9bf61537b57340b
-      internalID: 1170714217
+      spriteID: c4a1ca21b58e06a4bb0f1205c9aaacbc
+      internalID: -1000577540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medium hight_1
+      name: mess1_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 319
-        width: 101
-        height: 43
+        x: 26
+        y: 30
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,165 +141,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5acff8b208e35544caa36ed8f692ed39
-      internalID: 438660386
+      spriteID: 4414d2e4bcd171040a489840e082f0d8
+      internalID: -559828231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medium hight_2
+      name: mess1_2
       rect:
         serializedVersion: 2
-        x: 194
-        y: 313
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26de2c0f36088f344acfa71f5c268803
-      internalID: 9730856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_3
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 218
-        width: 41
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 733ece7e15b91e146ba596a26a0033ad
-      internalID: -1309563342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_4
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 232
-        width: 23
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dfb48514fadf5245bad0f2d664d7887
-      internalID: 1723472331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_5
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 232
-        width: 23
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f55309c31deb047458e14131a8dda110
-      internalID: -1632596839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_6
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 232
-        width: 23
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec53b30d1838a8f4db85e866c65d4b0b
-      internalID: 265684306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_7
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 216
-        width: 28
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84a42413f0446504ea93d0421ff07c11
-      internalID: -2140386784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_8
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 217
-        width: 21
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b190a91c5fc1a5458bb65ab7050422b
-      internalID: 1867681268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_9
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 272
+        x: 47
+        y: 30
         width: 9
         height: 21
       alignment: 0
@@ -309,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d11bdb8054c7d149b47c95e7f3d2a1e
-      internalID: -1291726582
+      spriteID: 17ecb84a3560f444b9bc79b46fa56e31
+      internalID: 660692191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medium hight_10
+      name: mess1_3
       rect:
         serializedVersion: 2
-        x: 235
-        y: 284
-        width: 7
-        height: 9
+        x: 61
+        y: 29
+        width: 10
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,124 +183,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac19e5c26f40b3a4f8ed396d7539a945
-      internalID: -1674621064
+      spriteID: 6439b98bf58713e4bbaa8131bde1ab99
+      internalID: -1310431051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medium hight_11
+      name: mess1_4
       rect:
         serializedVersion: 2
-        x: 246
-        y: 284
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f14b74eeee047564a8d5a283570696fc
-      internalID: 601687106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_12
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 220
-        width: 12
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7556d8ed1b432e64692c743d74973ea6
-      internalID: -541474957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 203
-        width: 198
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bc9245134d3b454abc3f5d626813a4d
-      internalID: -441904213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_15
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 189
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1cdf7b4d210ef845bb3cf973f23b8cf
-      internalID: 2042555883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_13
-      rect:
-        serializedVersion: 2
-        x: 378
-        y: 206
-        width: 74
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d19d75f2fc18174692e6ff772389d93
-      internalID: -1604250881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: medium hight_16
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 177
-        width: 21
+        x: 76
+        y: 30
+        width: 15
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -456,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09c3160620ba2ee43872d14ea817e734
-      internalID: -874532903
+      spriteID: be86fb0ef6c98ff4699f14163dbe6a48
+      internalID: 1789021773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medium hight_17
+      name: mess1_5
       rect:
         serializedVersion: 2
-        x: 19
-        y: 0
-        width: 141
-        height: 189
+        x: 96
+        y: 30
+        width: 15
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3e7305928604c14c9316a0e4052ac9c
-      internalID: -1072645704
+      spriteID: 56fc0cae64c4b1c4b887abda2551ea18
+      internalID: -743824222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medium hight_18
+      name: mess1_6
       rect:
         serializedVersion: 2
-        x: 204
-        y: 0
-        width: 164
-        height: 175
+        x: 120
+        y: 30
+        width: 30
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,8 +246,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8bf392c2d078134382fa55b21d1f5bb
-      internalID: 1917378912
+      spriteID: a48b34a61ee8ef942a96da94bb88a289
+      internalID: -1639497062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 31
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a7ba081f1ee4b40a113cc7290afb9a
+      internalID: -1184353045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 30
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5af288279de134f934317a8da31e00
+      internalID: -384921286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 30
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d4467fd150f5b47acef20f1bc1e70d
+      internalID: 19078079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1783bdbf95f794585b2b44acd58172
+      internalID: -1595876388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b61c8b45c752d4a98df6a7eef84884
+      internalID: -657574355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d7271cbf1b35b40a5605d2aec65e89
+      internalID: 2007896537
       vertices: []
       indices: 
       edges: []
@@ -515,25 +389,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      medium hight_11: 601687106
-      medium hight_17: -1072645704
-      medium hight_13: -1604250881
-      medium hight_15: 2042555883
-      medium hight_10: -1674621064
-      medium hight_7: -2140386784
-      medium hight_16: -874532903
-      medium hight_0: 1170714217
-      medium hight_3: -1309563342
-      medium hight_4: 1723472331
-      medium hight_9: -1291726582
-      medium hight_18: 1917378912
-      medium hight_2: 9730856
-      medium hight_5: -1632596839
-      medium hight_1: 438660386
-      medium hight_6: 265684306
-      medium hight_14: -441904213
-      medium hight_8: 1867681268
-      medium hight_12: -541474957
+      mess1_2: 660692191
+      mess1_6: -1639497062
+      mess1_4: 1789021773
+      mess1_11: -657574355
+      mess1_5: -743824222
+      mess1_8: -384921286
+      mess1_3: -1310431051
+      mess1_7: -1184353045
+      mess1_1: -559828231
+      mess1_12: 2007896537
+      mess1_0: -1000577540
+      mess1_9: 19078079
+      mess1_10: -1595876388
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
