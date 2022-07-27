@@ -14,6 +14,7 @@ public class HidenObjectTrigger : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
+        Debug.Log("He is Exit");
         if (collision.TryGetComponent(out MoveController player))
         {
             _time+=Time.deltaTime;
