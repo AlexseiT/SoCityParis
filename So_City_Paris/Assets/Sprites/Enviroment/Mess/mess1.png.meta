@@ -110,7 +110,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 30
+        y: 77
         width: 20
         height: 18
       alignment: 0
@@ -131,7 +131,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 26
-        y: 30
+        y: 77
         width: 17
         height: 7
       alignment: 0
@@ -152,7 +152,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 47
-        y: 30
+        y: 77
         width: 9
         height: 21
       alignment: 0
@@ -173,7 +173,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 61
-        y: 29
+        y: 76
         width: 10
         height: 8
       alignment: 0
@@ -193,9 +193,9 @@ TextureImporter:
       name: mess1_4
       rect:
         serializedVersion: 2
-        x: 76
-        y: 30
-        width: 15
+        x: 75
+        y: 77
+        width: 17
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -214,9 +214,9 @@ TextureImporter:
       name: mess1_5
       rect:
         serializedVersion: 2
-        x: 96
-        y: 30
-        width: 15
+        x: 95
+        y: 77
+        width: 17
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,7 +236,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 30
+        y: 77
         width: 30
         height: 16
       alignment: 0
@@ -257,7 +257,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 153
-        y: 31
+        y: 78
         width: 17
         height: 16
       alignment: 0
@@ -278,7 +278,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 175
-        y: 30
+        y: 77
         width: 15
         height: 16
       alignment: 0
@@ -299,7 +299,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 198
-        y: 30
+        y: 77
         width: 13
         height: 10
       alignment: 0
@@ -319,10 +319,10 @@ TextureImporter:
       name: mess1_10
       rect:
         serializedVersion: 2
-        x: 77
-        y: 0
-        width: 15
-        height: 23
+        x: 2
+        y: 47
+        width: 12
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,10 +340,10 @@ TextureImporter:
       name: mess1_11
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
+        x: 25
+        y: 57
         width: 15
-        height: 28
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,10 +361,10 @@ TextureImporter:
       name: mess1_12
       rect:
         serializedVersion: 2
-        x: 120
-        y: 0
-        width: 29
-        height: 23
+        x: 46
+        y: 46
+        width: 25
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,6 +374,153 @@ TextureImporter:
       bones: []
       spriteID: 02d7271cbf1b35b40a5605d2aec65e89
       internalID: 2007896537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 47
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e76ec76fc94204da44a8b3dfed5a16
+      internalID: 1542598882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 47
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72c0750aa7cc9e4fac8782385319f84
+      internalID: 685227507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 47
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754064f64cbb5cc4fb0c4029ac802913
+      internalID: -580839578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 23
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222d96c89d3928544a370ca5dc1f0c9e
+      internalID: 371163786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 28
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3ed723f4d5b0849b86d5698c208b8e
+      internalID: 711046679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 23
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ddb2a3b28881d4c86f1d471a929c37
+      internalID: -1429682295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mess1_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 4
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad2415fe0f42934eb604ca7cedf0194
+      internalID: 1129383041
       vertices: []
       indices: 
       edges: []
@@ -389,15 +536,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      mess1_18: -1429682295
       mess1_2: 660692191
       mess1_6: -1639497062
+      mess1_16: 371163786
       mess1_4: 1789021773
+      mess1_13: 1542598882
+      mess1_15: -580839578
+      mess1_14: 685227507
       mess1_11: -657574355
       mess1_5: -743824222
       mess1_8: -384921286
       mess1_3: -1310431051
+      mess1_17: 711046679
       mess1_7: -1184353045
       mess1_1: -559828231
+      mess1_19: 1129383041
       mess1_12: 2007896537
       mess1_0: -1000577540
       mess1_9: 19078079

@@ -1,19 +1,56 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class MoveController : MonoBehaviour
 {
     private Transform _tr;
     private Animator _animator;
+    private Rigidbody2D _rb;
+    private bool _isJump;
     [SerializeField] private float _walkSpeed = 3f;
+    [SerializeField] private float _jumpForce = 3f;
     void Start()
     {
         _tr = GetComponent<Transform>();
         _animator = GetComponent<Animator>();
+        _rb = GetComponent<Rigidbody2D>();
     }
-    void Update()
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+            _isJump = true;
+    }
+    void FixedUpdate()
     {
         float move = Input.GetAxis("Horizontal") * Time.deltaTime * _walkSpeed;
         transform.position += new Vector3(move, 0, 0);
+        CheckPlayerDirection(move);
+        if (_isJump && CheckGround.isGround)
+        {
+            Jump();
+            _isJump = false;
+        }
+    }
+    void Jump()
+    {
+        _rb.AddForce(new Vector2(0, _jumpForce));
+    }
+    //private IEnumerator JumpPositionCalculate() // My super jump which not working :(
+    //{
+    //    float expiredSeconds = 0f;
+    //    float progress = 0f;
+    //    Vector3 startPosition = _tr.position;
+    //    while (CheckGround.isGround)
+    //    {
+    //        expiredSeconds+=Time.deltaTime;
+    //        progress = expiredSeconds / _jumpDuration;
+    //        _tr.position =new Vector3(_tr.position.x, startPosition.y+_yAnimation.Evaluate(progress)* _jumpHeight);   
+    //        yield return new WaitForFixedUpdate();
+    //    }
+    //}
+    void CheckPlayerDirection(float move)
+    {
         if (!Mathf.Approximately(move, 0))
         {
             _animator.SetFloat("Speed", Mathf.Abs(Mathf.Round(move * 1000)));

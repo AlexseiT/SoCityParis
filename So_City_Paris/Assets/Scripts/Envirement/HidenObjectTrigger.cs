@@ -12,22 +12,28 @@ public class HidenObjectTrigger : MonoBehaviour
     {
         _color = _objectOuter.GetComponent<SpriteRenderer>();
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("He is Exit");
         if (collision.TryGetComponent(out MoveController player))
         {
-            _time+=Time.deltaTime;
-            _color.color = new Color(1, 1, 1, 1 - _time/_timeForHiden);
+            StartCoroutine(SlowlyChangeColor(-1));
         }
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
-        _time = 0;
         if (collision.TryGetComponent(out MoveController player))
         {
-            _color.color = new Color(1, 1, 1, 1);
+            StartCoroutine(SlowlyChangeColor(1));
         }
+    }
+    private IEnumerator SlowlyChangeColor(int sign)
+    {
+        _time = 0;
+        while (_time < _timeForHiden)
+        {
+            _time+=Time.deltaTime;
+            _color.color = new Color(1, 1, 1,(1-sign)/2 + sign * _time / _timeForHiden);
+            yield return null;
+        }        
     }
 }

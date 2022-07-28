@@ -4,12 +4,13 @@ public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform _mainCharacter;
     [SerializeField] private float _dy = 0;
+    [SerializeField] private float _dx = 0;
     [SerializeField] private float _smooth = 0;
     private void Awake()
     {
         this.transform.position = new Vector3()
         {
-            x = _mainCharacter.position.x,
+            x = _mainCharacter.position.x - _dx,
             y = _mainCharacter.position.y - _dy,
             z = this.transform.position.z,
         };
@@ -18,7 +19,7 @@ public class CameraFollow : MonoBehaviour
     {
         Vector3 target = new Vector3()
         {
-            x = _mainCharacter.position.x,
+            x = _mainCharacter.position.x - _dx,
             y = _mainCharacter.position.y - _dy,
             z = this.transform.position.z,
         };
