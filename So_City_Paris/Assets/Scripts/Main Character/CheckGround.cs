@@ -8,6 +8,7 @@ public class CheckGround : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         isGround = true;
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

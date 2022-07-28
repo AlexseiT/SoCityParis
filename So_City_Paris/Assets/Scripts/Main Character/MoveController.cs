@@ -9,7 +9,10 @@ public class MoveController : MonoBehaviour
     private Rigidbody2D _rb;
     private bool _isJump;
     [SerializeField] private float _walkSpeed = 3f;
-    [SerializeField] private float _jumpForce = 3f;
+    [SerializeField] private float _jumpDuration;
+    [SerializeField] private AnimationCurve _yAnimation;
+    [SerializeField] private int _jumpHeight;
+
     void Start()
     {
         _tr = GetComponent<Transform>();
@@ -34,21 +37,21 @@ public class MoveController : MonoBehaviour
     }
     void Jump()
     {
-        _rb.AddForce(new Vector2(0, _jumpForce));
+        StartCoroutine(JumpPositionCalculate());
     }
-    //private IEnumerator JumpPositionCalculate() // My super jump which not working :(
-    //{
-    //    float expiredSeconds = 0f;
-    //    float progress = 0f;
-    //    Vector3 startPosition = _tr.position;
-    //    while (CheckGround.isGround)
-    //    {
-    //        expiredSeconds+=Time.deltaTime;
-    //        progress = expiredSeconds / _jumpDuration;
-    //        _tr.position =new Vector3(_tr.position.x, startPosition.y+_yAnimation.Evaluate(progress)* _jumpHeight);   
-    //        yield return new WaitForFixedUpdate();
-    //    }
-    //}
+    private IEnumerator JumpPositionCalculate() // My super jump which not working :(
+    {
+        float expiredSeconds = 0f;
+        float progress = 0f;
+        Vector3 startPosition = _tr.position;
+        do
+        {
+            expiredSeconds += Time.deltaTime;
+            progress = expiredSeconds / _jumpDuration;
+            _tr.position = new Vector3(_tr.position.x, startPosition.y + _yAnimation.Evaluate(progress) * _jumpHeight);
+            yield return new WaitForFixedUpdate(); 
+        } while (!CheckGround.isGround && progress<0.42f);
+    }
     void CheckPlayerDirection(float move)
     {
         if (!Mathf.Approximately(move, 0))
