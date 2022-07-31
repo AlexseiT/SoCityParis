@@ -1,17 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CheckGround : MonoBehaviour
 {
+    private readonly int GROUND_LAYER=3;
     public static bool isGround { get; private set; }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-        isGround = true;
-        
+        if (collision.gameObject.layer == GROUND_LAYER)
+            isGround = true;
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isGround =false;    
+        if (collision.gameObject.layer == GROUND_LAYER)
+            isGround = false;
     }
 }

@@ -21,17 +21,9 @@ public class MoveController : MonoBehaviour
     {
         _move = Input.GetAxis("Horizontal");
         _tr.position += new Vector3(_move * Time.deltaTime * _walkSpeed, 0, 0);
-        if (Input.GetKeyDown(KeyCode.Space))
-            _isJump = true;
-    }
-    void FixedUpdate()
-    {
-        CheckPlayerDirection(_move);
-        if (_isJump && CheckGround.isGround)
-        {
+        if (Input.GetKeyDown(KeyCode.Space) && CheckGround.isGround)
             Jump();
-            _isJump = false;
-        }
+        CheckPlayerDirection(_move);
     }
     void Jump()
     {
