@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - PlayerCanJump
   - Water
   - UI
-  - 
+  - Wall
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background Back
+    uniqueID: 1204736643
+    locked: 0
+  - name: Background
+    uniqueID: 2371959671
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 'Ground '
+    uniqueID: 3064861237
+    locked: 0
+  - name: Ground Front
+    uniqueID: 1477784703
     locked: 0

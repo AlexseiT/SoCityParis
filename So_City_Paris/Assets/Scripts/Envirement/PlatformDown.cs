@@ -18,7 +18,7 @@ public class PlatformDown : MonoBehaviour
         
     }
     private void OnCollisionExit2D(Collision2D collision)
-    {
+    { 
         if (collision.gameObject.TryGetComponent<MoveController>(out MoveController Player))
         {
             _platfoemEffector.surfaceArc = 180;

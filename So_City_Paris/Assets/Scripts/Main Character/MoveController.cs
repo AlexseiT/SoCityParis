@@ -7,13 +7,12 @@ public class MoveController : MonoBehaviour
     private Rigidbody2D _rb;
     [SerializeField] private float _walkSpeed = 3f;
     [SerializeField] private float _jumpForce;
-    public static int orderLayerPlayer;
+
     private void Start()
     {
         _tr = GetComponent<Transform>();
         _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
-        orderLayerPlayer = GetComponent<SpriteRenderer>().sortingOrder;
     }
 
     private void Update()
