@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.1/staging' branch; Version is '2022.1.10f1 (9aa0f82c4f96) revision 10133752'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 16226 MB
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'ru' Physical Memory: 8063 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\unity\2022.1.10f1\Editor\Unity.exe
+D:\Programs\Unity\2022.1.10f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/SoCityParis/So_City_Paris
+D:/DevelopProjects/SoCityParis/So_City_Paris
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59831
-Successfully changed project path to: D:/SoCityParis/So_City_Paris
-D:/SoCityParis/So_City_Paris
+59839
+Successfully changed project path to: D:/DevelopProjects/SoCityParis/So_City_Paris
+D:/DevelopProjects/SoCityParis/So_City_Paris
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,297 +47,61 @@ D:/SoCityParis/So_City_Paris
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 150.90 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 358.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.10f1 (9aa0f82c4f96)
-[Subsystems] Discovering subsystems at path D:/unity/2022.1.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/SoCityParis/So_City_Paris/Assets
+[Subsystems] Discovering subsystems at path D:/Programs/Unity/2022.1.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/DevelopProjects/SoCityParis/So_City_Paris/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
     Vendor:   NVIDIA
-    VRAM:     6052 MB
-    Driver:   30.0.14.7284
+    VRAM:     2988 MB
+    Driver:   30.0.15.1215
 Initialize mono
-Mono path[0] = 'D:/unity/2022.1.10f1/Editor/Data/Managed'
-Mono path[1] = 'D:/unity/2022.1.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/unity/2022.1.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Mono path[0] = 'D:/Programs/Unity/2022.1.10f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Programs/Unity/2022.1.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Programs/Unity/2022.1.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/unity/2022.1.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002832 seconds.
+Register platform support module: D:/Programs/Unity/2022.1.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004195 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 140.57 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 249.39 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.794 seconds
+- Completed reload, in  1.407 seconds
 Domain Reload Profiling:
-	ReloadAssembly (794ms)
-		BeginReloadAssembly (80ms)
+	ReloadAssembly (1407ms)
+		BeginReloadAssembly (243ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (601ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (996ms)
+			LoadAssemblies (239ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
-				TypeCache.Initialize (135ms)
-					TypeCache.ScanAssembly (134ms)
-				ResolveRequiredComponents (0ms)
+			SetupTypeCache (222ms)
+				TypeCache.Initialize (221ms)
+					TypeCache.ScanAssembly (219ms)
+				ResolveRequiredComponents (1ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (371ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (630ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (8ms)
-				RefreshPlugins (141ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (159ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (20ms)
+				RefreshPlugins (249ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006285 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\SoCityParis\So_City_Paris\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\SoCityParis\So_City_Paris\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 149.46 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.562 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1563ms)
-		BeginReloadAssembly (128ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1301ms)
-			LoadAssemblies (114ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (368ms)
-				TypeCache.Initialize (349ms)
-					TypeCache.ScanAssembly (344ms)
-				ResolveRequiredComponents (19ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (677ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (8ms)
-				RefreshPlugins (150ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (271ms)
-				ProcessInitializeOnLoadMethodAttributes (103ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5587 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (347.4 KB). Loaded Objects now: 6047.
-Memory consumption went from 0.86 GB to 0.86 GB.
-Total: 5.418300 ms (FindLiveObjects: 0.654300 ms CreateObjectMapping: 1.192700 ms MarkObjects: 3.413100 ms  DeleteObjects: 0.157000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 844765.991664 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset
-  artifactKey: Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset using Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68186171870b5ae0e4ea96a091b92ebb') in 0.113077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_8.asset
-  artifactKey: Guid(bacee0d2168eb9841b235d16d2c9d411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_8.asset using Guid(bacee0d2168eb9841b235d16d2c9d411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e5e2b38dbfcefe9e575934912307d51') in 0.016296 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_4.asset
-  artifactKey: Guid(d1e7b299f54bf7844affb0447c99763e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_4.asset using Guid(d1e7b299f54bf7844affb0447c99763e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e5e5b272766845399a84db30464ccf4') in 0.020931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_5.asset
-  artifactKey: Guid(cd2122f2a7ad0de4190102d7961f2300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_5.asset using Guid(cd2122f2a7ad0de4190102d7961f2300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d45dda8ff4384d4d61fbe134b420ad') in 0.023650 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_1.asset
-  artifactKey: Guid(07d83722d1b8e2a4781f636c8f5f60a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_1.asset using Guid(07d83722d1b8e2a4781f636c8f5f60a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b83ca001ecc5c2163383a4efa11b807') in 0.018602 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_7.asset
-  artifactKey: Guid(517dee31edabda44fa933600f76a5821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_7.asset using Guid(517dee31edabda44fa933600f76a5821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0444b6e9f55f211d4d3420737a8d097') in 0.013987 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.713609 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset
-  artifactKey: Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset using Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7297fa8c879cbffc0547e56976d1bbed') in 0.011084 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_10.asset
-  artifactKey: Guid(6cf598766ce07de47bc0a179c8cc3f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_10.asset using Guid(6cf598766ce07de47bc0a179c8cc3f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00dea981080a71044d5cf7ff245bbeff') in 0.010294 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_9.asset
-  artifactKey: Guid(3a2cdeec7616c5141bb44528176b95ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_9.asset using Guid(3a2cdeec7616c5141bb44528176b95ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f6eb38b8787212aeaf3ed65ded423d') in 0.008453 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_2.asset
-  artifactKey: Guid(dd6558d5a2541ce40b2276a7b1d0cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_2.asset using Guid(dd6558d5a2541ce40b2276a7b1d0cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5be60609fdc65ca503b7ccffe6e7fa') in 0.009333 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_5.asset
-  artifactKey: Guid(cd2122f2a7ad0de4190102d7961f2300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_5.asset using Guid(cd2122f2a7ad0de4190102d7961f2300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dde5c7ec69a16155a4c5e8a5805f988') in 0.008018 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_1.asset
-  artifactKey: Guid(07d83722d1b8e2a4781f636c8f5f60a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_1.asset using Guid(07d83722d1b8e2a4781f636c8f5f60a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ead0c9f58ab7191db689c1db80db1c') in 0.009139 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_7.asset
-  artifactKey: Guid(517dee31edabda44fa933600f76a5821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_7.asset using Guid(517dee31edabda44fa933600f76a5821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27cbc61a8261ebdb78ec8ee75e664446') in 0.009273 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.269836 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset
-  artifactKey: Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset using Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a78935050aa4654e35567543ed2885') in 0.011222 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_10.asset
-  artifactKey: Guid(6cf598766ce07de47bc0a179c8cc3f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_10.asset using Guid(6cf598766ce07de47bc0a179c8cc3f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183f74d21268134e77070f6485cb71ca') in 0.008807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_8.asset
-  artifactKey: Guid(bacee0d2168eb9841b235d16d2c9d411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_8.asset using Guid(bacee0d2168eb9841b235d16d2c9d411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efe1bf928d41868270fcde450155c5b') in 0.009190 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_5.asset
-  artifactKey: Guid(cd2122f2a7ad0de4190102d7961f2300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_5.asset using Guid(cd2122f2a7ad0de4190102d7961f2300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7810b11d8903a6f87167c453e2dc848') in 0.010334 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_1.asset
-  artifactKey: Guid(07d83722d1b8e2a4781f636c8f5f60a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_1.asset using Guid(07d83722d1b8e2a4781f636c8f5f60a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '591af88e25b1c189f3ecbc4c9fc755e3') in 0.007667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.376562 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset
-  artifactKey: Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_0.asset using Guid(b4a5cc30cbaaf6c488c02b41b4d40fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70dbf021fa1d74d9c4ca47a9d862606') in 0.012226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_10.asset
-  artifactKey: Guid(6cf598766ce07de47bc0a179c8cc3f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_10.asset using Guid(6cf598766ce07de47bc0a179c8cc3f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ea1ed825e0ca8b674139c6929f5ec6') in 0.011024 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_2.asset
-  artifactKey: Guid(dd6558d5a2541ce40b2276a7b1d0cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_2.asset using Guid(dd6558d5a2541ce40b2276a7b1d0cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4696ba8f21f9c767dc4aae482cce65c') in 0.010218 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_11.asset
-  artifactKey: Guid(7a8510415e0a44041aaf40e125ddd323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_11.asset using Guid(7a8510415e0a44041aaf40e125ddd323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c948ba526f765d278e0f3b0faf8f10df') in 0.018890 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_6.asset
-  artifactKey: Guid(92c6e290e09cd77499f412ddac12a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_6.asset using Guid(92c6e290e09cd77499f412ddac12a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd2b25189ebfad1288562d2dff4ea75') in 0.017792 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 191.787293 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road.png
-  artifactKey: Guid(aaea8be7701e2754fb1bee54b8868063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road.png using Guid(aaea8be7701e2754fb1bee54b8868063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56b57213475f230bbd1ac3e02971ca4') in 0.154574 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_8.asset
-  artifactKey: Guid(bacee0d2168eb9841b235d16d2c9d411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_8.asset using Guid(bacee0d2168eb9841b235d16d2c9d411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5426cf46fb5d3a4bf2f2a6677c9c4177') in 0.006887 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_2.asset
-  artifactKey: Guid(dd6558d5a2541ce40b2276a7b1d0cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_2.asset using Guid(dd6558d5a2541ce40b2276a7b1d0cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7e41ad4b84550a56fa29e4258246c1') in 0.010249 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_11.asset
-  artifactKey: Guid(7a8510415e0a44041aaf40e125ddd323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_11.asset using Guid(7a8510415e0a44041aaf40e125ddd323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931b782ee376c182c47dd23018439d25') in 0.032957 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_3.asset
-  artifactKey: Guid(2d5fde362e9ea5c41a51329e7ed9504a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_3.asset using Guid(2d5fde362e9ea5c41a51329e7ed9504a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678b809ee7e48d594a57eeb839b54988') in 0.006777 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Sprites/Enviroment/Tiles/dirty_road_6.asset
-  artifactKey: Guid(92c6e290e09cd77499f412ddac12a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/Tiles/dirty_road_6.asset using Guid(92c6e290e09cd77499f412ddac12a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8314c9ae9396da08ef18c23097940c9') in 0.010169 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Registered in 0.008460 seconds.

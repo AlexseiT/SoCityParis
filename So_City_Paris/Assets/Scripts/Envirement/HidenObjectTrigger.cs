@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Architecture.Player;
+
 
 public class HidenObjectTrigger : MonoBehaviour
 {
@@ -14,14 +16,14 @@ public class HidenObjectTrigger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out MoveController player))
+        if (collision.TryGetComponent(out Player player))
         {
             StartCoroutine(SlowlyChangeColor(-1));
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out MoveController player))
+        if (collision.TryGetComponent(out Player player))
         {
             StartCoroutine(SlowlyChangeColor(1));
         }
