@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Architecture.Player;
+using System.Collections;
+using UnityEngine;
 
 [RequireComponent(typeof(PlatformEffector2D))]
 public class PlatformDown : MonoBehaviour
@@ -15,7 +14,7 @@ public class PlatformDown : MonoBehaviour
         _platfoemEffector = GetComponent<PlatformEffector2D>();
     }
 
-    public void RemoveSurfaceArc ()
+    public void RemoveSurfaceArc()
     {
         StartCoroutine(RemoveSurfaceArcCoroutine());
     }
@@ -32,7 +31,7 @@ public class PlatformDown : MonoBehaviour
     }
 
     private void OnCollisionExit2D(Collision2D collision)
-    { 
+    {
         if (collision.gameObject.TryGetComponent<Player>(out Player Player))
         {
             _platfoemEffector.surfaceArc = 180;

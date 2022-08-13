@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 namespace Architecture.Player
 {
@@ -12,11 +10,14 @@ namespace Architecture.Player
         {
             Run = 0,
             Jump,
-            GoDown
+            GoDown,
+            Shoot
         };
 
         private Dictionary<KeyButtonConfiguration, KeyCode> _keyButtons;
         private PlayerMover _playerMover;
+        private Idamagable _damagableEntity;
+        private Weapon _Currentweapon;
 
         private void Start()
         {
@@ -25,40 +26,56 @@ namespace Architecture.Player
                 { KeyButtonConfiguration.Run, KeyCode.LeftShift },
                 { KeyButtonConfiguration.Jump, KeyCode.Space },
                 { KeyButtonConfiguration.GoDown, KeyCode.S },
-                
+                { KeyButtonConfiguration.Shoot, KeyCode.Mouse0 },
             };
-
+            _Currentweapon = GetComponentInChildren<Weapon>();
+            _damagableEntity = GetComponentInChildren<Idamagable>();
             _playerMover = GetComponent<PlayerMover>();
         }
 
         private void Update()
         {
-            PlayerMove();
+            CheckPlayerMove();
 
-            PlayerJump();
+            CheckPlayerJump();
 
+            CheckPressedDown();
+
+            CheckPlayerShoot();
+        }
+
+        private void CheckPlayerShoot()
+        {
+            if (Input.GetKeyDown(_keyButtons[KeyButtonConfiguration.Shoot]))
+            {
+                Debug.Log("Shoot Button Is pressed");
+                _damagableEntity.GiveDamage(_Currentweapon);
+            }
+        }
+
+        private void CheckPressedDown()
+        {
             if (Input.GetKeyDown(_keyButtons[KeyButtonConfiguration.GoDown]))
             {
                 _playerMover.TryGoDownOnPlatform();
             }
-
         }
 
-        private void PlayerMove()
+        private void CheckPlayerMove()
         {
             float moveX = Input.GetAxis("Horizontal");
 
-            if (Input.GetKey(_keyButtons[KeyButtonConfiguration.Run]))   
+            if (Input.GetKey(_keyButtons[KeyButtonConfiguration.Run]))
             {
                 _playerMover.Run(moveX);
             }
             else
             {
-                _playerMover.Walk(moveX); 
+                _playerMover.Walk(moveX);
             }
         }
 
-        private void PlayerJump()
+        private void CheckPlayerJump()
         {
             if (Input.GetKeyDown(_keyButtons[KeyButtonConfiguration.Jump]))
             {

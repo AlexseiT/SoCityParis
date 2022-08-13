@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
-using System;
 
 namespace Architecture
 {
@@ -28,8 +26,5 @@ namespace Architecture
             if (_health <= 0)
                 Die();
         }
-
-
     }
 }
-

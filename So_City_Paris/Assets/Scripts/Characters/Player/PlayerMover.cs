@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Architecture.Player
@@ -35,21 +33,27 @@ namespace Architecture.Player
         private void Move(float move)
         {
             if (!Mathf.Approximately(move, 0))
+            {
                 _transform.position += new Vector3(move * Time.deltaTime, 0);
-
+                Flip(move);
+            }
         }
 
         public void Jump()
-        {       
+        {
             if (_checkGround.IsGround)
                 _rigidBody2D.AddForce(new Vector2(0, _jumpForce));
         }
 
+        private void Flip(float move)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(move), 1, 1);
+        }
+
         public void TryGoDownOnPlatform()
         {
-            if (_checkGround.pl!= null)
+            if (_checkGround.pl != null)
                 _checkGround.pl.RemoveSurfaceArc();
         }
     }
-
 }
