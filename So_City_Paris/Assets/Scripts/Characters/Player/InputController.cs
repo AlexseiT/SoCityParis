@@ -64,14 +64,16 @@ namespace Architecture.Player
         private void CheckPlayerMove()
         {
             float moveX = Input.GetAxis("Horizontal");
-
-            if (Input.GetKey(_keyButtons[KeyButtonConfiguration.Run]))
+            if (!Mathf.Approximately(moveX,0))
             {
-                _playerMover.Run(moveX);
-            }
-            else
-            {
-                _playerMover.Walk(moveX);
+                if (Input.GetKey(_keyButtons[KeyButtonConfiguration.Run]))
+                {
+                    _playerMover.Run(moveX);
+                }
+                else
+                {
+                    _playerMover.Walk(moveX);
+                }
             }
         }
 

@@ -13,6 +13,7 @@ internal class WeaponRotateController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, rotateZ + rotateGun);
         Rotate();
     }
+    
 
     public void Rotate()
     {

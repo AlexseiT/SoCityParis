@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Architecture.Player
@@ -7,6 +8,7 @@ namespace Architecture.Player
         private readonly int GROUND_LAYER = 3;
         public bool IsGround { get; private set; }
         public PlatformDown pl { get; private set; }
+        public static Action onLanded;
 
         private void OnTriggerStay2D(Collider2D collision)
         {
@@ -24,6 +26,11 @@ namespace Architecture.Player
 
             if (collision.gameObject.layer == GROUND_LAYER)
                 IsGround = false;
+        }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.layer == GROUND_LAYER)
+                onLanded?.Invoke();
         }
     }
 }

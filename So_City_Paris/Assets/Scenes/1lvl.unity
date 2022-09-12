@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 2.8
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000083d2ce47773b618d3512aeb67f341558
@@ -4073,6 +4073,7 @@ MonoBehaviour:
   _runSpeed: 4.5
   _jumpForce: 400
   _checkGround: {fileID: 933729836}
+  _animatorController: {fileID: 0}
 --- !u!114 &1299272254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4087,6 +4088,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 0
   _maxHealth: 0
+--- !u!114 &1299272259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299272239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7bd9b2b7b1f7e4087a3960949c47f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _checkGround: {fileID: 0}
 --- !u!4 &1318415919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4985271073094829898, guid: 974f94f8368df164f815a3d8364183f5, type: 3}
@@ -4109,13 +4123,14 @@ GameObject:
   - component: {fileID: 1331945303}
   - component: {fileID: 1331945302}
   - component: {fileID: 1331945304}
+  - component: {fileID: 1331945305}
   m_Layer: 0
   m_Name: HandWithRevolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1331945301
 Transform:
   m_ObjectHideFlags: 0
@@ -4215,6 +4230,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e553f00a57e11f24fbeccbf7a18af433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1331945305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331945300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7001e1740bad93c44bc7ffa26c0d7de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateGun: 0
 --- !u!4 &1344317578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2347048055358923167, guid: 444f1be380f2b4f45bf4838949fe84da, type: 3}

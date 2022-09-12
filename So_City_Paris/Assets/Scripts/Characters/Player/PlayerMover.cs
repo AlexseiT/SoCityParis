@@ -9,12 +9,15 @@ namespace Architecture.Player
         [SerializeField] private float _runSpeed;
         [SerializeField] private float _jumpForce;
         [SerializeField] private CheckGround _checkGround;
+        [SerializeField] private AnimatorController _animatorController;
 
         private Transform _transform;
         private Rigidbody2D _rigidBody2D;
+        [SerializeField] private float _jumpDelay;
 
         private void Start()
         {
+            _animatorController = GetComponent<AnimatorController>();
             _transform = GetComponent<Transform>();
             _rigidBody2D = GetComponent<Rigidbody2D>();
             _checkGround = GetComponentInChildren<CheckGround>();
@@ -22,12 +25,16 @@ namespace Architecture.Player
 
         public void Walk(float moveX)
         {
-            Move(moveX * _walkSpeed);
+            var move = moveX * _walkSpeed;
+            Move(move);
+            _animatorController.SetSpeedValue(move);
         }
 
         public void Run(float moveX)
         {
-            Move(moveX * _runSpeed);
+            var move = moveX * _runSpeed;
+            Move(move);
+            _animatorController.SetSpeedValue(move);
         }
 
         private void Move(float move)
@@ -40,6 +47,11 @@ namespace Architecture.Player
         }
 
         public void Jump()
+        {
+            Invoke("JumpAddForce", _jumpDelay);
+            _animatorController.SetJumpAnim();
+        }
+        public void JumpAddForce()
         {
             if (_checkGround.IsGround)
                 _rigidBody2D.AddForce(new Vector2(0, _jumpForce));
