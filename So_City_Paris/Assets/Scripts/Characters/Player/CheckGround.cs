@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Architecture.Player
+namespace Architecture.PlayerSpace
 {
     public class CheckGround : MonoBehaviour
     {

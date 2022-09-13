@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Architecture.Player
+namespace Architecture.PlayerSpace
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerMover : MonoBehaviour

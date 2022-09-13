@@ -1,14 +1,18 @@
+using System;
 using UnityEngine;
 
 public class ShootController : MonoBehaviour, Idamagable
 {
+    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private Transform _firePoint;
     public void GiveDamage(Weapon weapon)
     {
-        Shoot(weapon);
+        Shoot();
     }
-
-    public void Shoot(Weapon weapon)
+    public void Shoot()
     {
-        //Instantiate(bulletPrefab, bulletPoint.position, transform.rotation);
+        var bullet = Instantiate(_bulletPrefab);
+        bullet.transform.parent = this. transform; //делаем пулю дочерним объектом HandWithWeapon
+        bullet.transform.localPosition = _firePoint.localPosition;
     }
 }

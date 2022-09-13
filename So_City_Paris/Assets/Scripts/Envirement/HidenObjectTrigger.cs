@@ -1,4 +1,4 @@
-using Architecture.Player;
+using Architecture.PlayerSpace;
 using System.Collections;
 using UnityEngine;
 

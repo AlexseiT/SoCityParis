@@ -1,4 +1,4 @@
-using Architecture.Player;
+using Architecture.PlayerSpace;
 using System;
 using UnityEngine;
 
@@ -25,7 +25,6 @@ namespace Architecture
         {
             CheckGround.onLanded -= StopPlayJumpAnim;
         }
-
         public void SetSpeedValue(float move) => _animator.SetFloat(_speedParamName, (float)Math.Round(Mathf.Abs(move), 2));
 
         public void SetJumpAnim() => _animator.SetBool(_jumpParamName, true);

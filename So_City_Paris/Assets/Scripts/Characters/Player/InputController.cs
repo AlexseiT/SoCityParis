@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Architecture.Player
+namespace Architecture.PlayerSpace
 {
     [RequireComponent(typeof(PlayerMover))]
     public class InputController : MonoBehaviour
@@ -48,7 +48,6 @@ namespace Architecture.Player
         {
             if (Input.GetKeyDown(_keyButtons[KeyButtonConfiguration.Shoot]))
             {
-                Debug.Log("Shoot Button Is pressed");
                 _damagableEntity.GiveDamage(_Currentweapon);
             }
         }
