@@ -293,3 +293,33 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 88.809797 seconds.
+  path: Assets/Sprites/Enviroment/Top High/HouseTop.png
+  artifactKey: Guid(6efc3d6683d491446a9d6207ede22094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enviroment/Top High/HouseTop.png using Guid(6efc3d6683d491446a9d6207ede22094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e8adbe02661b6dc5e69f2e0894435d') in 0.253190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.472585 seconds.
+  path: Assets/Sprites/Enviroment
+  artifactKey: Guid(493de20f1f58d5b4899eac2446816d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enviroment using Guid(493de20f1f58d5b4899eac2446816d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089357c046568d50fccdeb20e1eccd1e') in 0.005710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.213228 seconds.
+  path: Assets/Sprites/Enviroment/Top High
+  artifactKey: Guid(35f81c7873b0f154ab21dc69c48e2197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enviroment/Top High using Guid(35f81c7873b0f154ab21dc69c48e2197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54df3b1d6fd9aff0fc52b29a3042e6c') in 0.020191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 212.166486 seconds.
+  path: Assets/Sprites/Enviroment/Top High/HouseTop.png
+  artifactKey: Guid(6efc3d6683d491446a9d6207ede22094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enviroment/Top High/HouseTop.png using Guid(6efc3d6683d491446a9d6207ede22094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e932ed6349c110b6f7d494a5cbc21e') in 0.111119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.462679 seconds.
+  path: Assets/Sprites/Enviroment/Top High/HouseTop.png
+  artifactKey: Guid(6efc3d6683d491446a9d6207ede22094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enviroment/Top High/HouseTop.png using Guid(6efc3d6683d491446a9d6207ede22094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab566128c718e16542f56adda474823b') in 0.135626 seconds 
