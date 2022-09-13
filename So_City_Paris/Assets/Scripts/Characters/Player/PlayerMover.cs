@@ -8,8 +8,8 @@ namespace Architecture.PlayerSpace
         [SerializeField] private float _walkSpeed;
         [SerializeField] private float _runSpeed;
         [SerializeField] private float _jumpForce;
-        [SerializeField] private CheckGround _checkGround;
-        [SerializeField] private AnimatorController _animatorController;
+        private CheckGround _checkGround;
+        private AnimatorController _animatorController;
 
         private Transform _transform;
         private Rigidbody2D _rigidBody2D;
@@ -42,7 +42,6 @@ namespace Architecture.PlayerSpace
             if (!Mathf.Approximately(move, 0))
             {
                 _transform.position += new Vector3(move * Time.deltaTime, 0);
-                Flip(move);
             }
         }
 
@@ -51,13 +50,13 @@ namespace Architecture.PlayerSpace
             Invoke("JumpAddForce", _jumpDelay);
             _animatorController.SetJumpAnim();
         }
-        public void JumpAddForce()
+        private void JumpAddForce()
         {
             if (_checkGround.IsGround)
                 _rigidBody2D.AddForce(new Vector2(0, _jumpForce));
         }
 
-        private void Flip(float move)
+        public void Flip(float move)
         {
             transform.localScale = new Vector3(Mathf.Sign(move), 1, 1);
         }

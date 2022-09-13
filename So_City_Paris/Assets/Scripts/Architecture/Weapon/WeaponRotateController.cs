@@ -1,11 +1,13 @@
+using Architecture.PlayerSpace;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 internal class WeaponRotateController : MonoBehaviour
 {
     [SerializeField] private Transform _shouldTr;
+    [SerializeField] private PlayerMover _player;
     private bool _checkFlip = true;
-
     private void Update()
     {
 
@@ -28,10 +30,12 @@ internal class WeaponRotateController : MonoBehaviour
         Vector3 vectorPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         if (_checkFlip && vectorPoint.x < 0 || !_checkFlip && vectorPoint.x > 0)
         {
+            
             _checkFlip = !_checkFlip;
             Vector3 scaler = transform.localScale;
             scaler.x *= -1;
             scaler.y *= -1;
+            _player.Flip(scaler.x);
             transform.localScale = scaler;
         }
     }
