@@ -9,14 +9,14 @@ namespace Architecture.PlayerSpace
         [SerializeField] private float _runSpeed;
         [SerializeField] private float _jumpForce;
         private CheckGround _checkGround;
-        private AnimatorController _animatorController;
+        private AnimatorPlayerController _animatorController;
 
         private Transform _transform;
         private Rigidbody2D _rigidBody2D;
 
         private void Start()
         {
-            _animatorController = GetComponent<AnimatorController>();
+            _animatorController = GetComponent<AnimatorPlayerController>();
             _transform = GetComponent<Transform>();
             _rigidBody2D = GetComponent<Rigidbody2D>();
             _checkGround = GetComponentInChildren<CheckGround>();
