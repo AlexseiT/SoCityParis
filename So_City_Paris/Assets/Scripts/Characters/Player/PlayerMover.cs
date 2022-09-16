@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Architecture.PlayerSpace
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class PlayerMover : MonoBehaviour
+    public class PlayerMover : MonoBehaviour, IFliper
     {
         [SerializeField] private float _walkSpeed;
         [SerializeField] private float _runSpeed;
@@ -13,7 +13,6 @@ namespace Architecture.PlayerSpace
 
         private Transform _transform;
         private Rigidbody2D _rigidBody2D;
-        [SerializeField] private float _jumpDelay;
 
         private void Start()
         {
@@ -47,13 +46,12 @@ namespace Architecture.PlayerSpace
 
         public void Jump()
         {
-            Invoke("JumpAddForce", _jumpDelay);
-            _animatorController.SetJumpAnim();
-        }
-        private void JumpAddForce()
-        {
             if (_checkGround.IsGround)
-                _rigidBody2D.AddForce(new Vector2(0, _jumpForce));
+            {
+                _rigidBody2D.velocity = Vector2.up*_jumpForce;
+                _animatorController.SetJumpAnim();
+            }
+                
         }
 
         public void Flip(float move)

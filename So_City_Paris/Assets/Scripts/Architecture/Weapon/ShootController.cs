@@ -12,7 +12,6 @@ public class ShootController : MonoBehaviour, Idamagable
     public void Shoot()
     {
         var bullet = Instantiate(_bulletPrefab);
-        bullet.transform.parent = this. transform; //делаем пулю дочерним объектом HandWithWeapon
-        bullet.transform.localPosition = _firePoint.localPosition;
+        bullet.transform.position = _firePoint.position;
     }
 }

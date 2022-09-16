@@ -2628,6 +2628,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6200000, guid: 855b984834300ec45aea5c44f30bb656, type: 2}
     - target: {fileID: 2687140741577120494, guid: 8bff3a73a0dbe0145abe03ada8468ffb, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687140741577120494, guid: 8bff3a73a0dbe0145abe03ada8468ffb, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
@@ -2733,17 +2737,6 @@ Transform:
   m_Father: {fileID: 319728758}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &933729836 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8051615729482929529, guid: 8bff3a73a0dbe0145abe03ada8468ffb, type: 3}
-  m_PrefabInstance: {fileID: 850715309}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be516e045f63cb848b66798dd26f8600, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &947071812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3434,6 +3427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform little
       objectReference: {fileID: 0}
+    - target: {fileID: 2347048055358923153, guid: 444f1be380f2b4f45bf4838949fe84da, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2347048055358923166, guid: 444f1be380f2b4f45bf4838949fe84da, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -4074,9 +4071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _walkSpeed: 3
   _runSpeed: 4.5
-  _jumpForce: 400
-  _checkGround: {fileID: 933729836}
-  _animatorController: {fileID: 0}
+  _jumpForce: 500
   _jumpDelay: 0.3
 --- !u!114 &1299272254
 MonoBehaviour:
@@ -4209,7 +4204,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1230106059
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5c59b758af690624483121fab8fc5a30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4247,7 +4242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7001e1740bad93c44bc7ffa26c0d7de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateGun: 0
+  _shouldTr: {fileID: 1407710578}
 --- !u!4 &1344317578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2347048055358923167, guid: 444f1be380f2b4f45bf4838949fe84da, type: 3}
@@ -6837,7 +6832,7 @@ MonoBehaviour:
   m_AssetsPPU: 12
   m_RefResolutionX: 320
   m_RefResolutionY: 180
-  m_CropFrame: 0
+  m_CropFrame: 3
   m_GridSnapping: 0
   m_FilterMode: 0
   m_UpscaleRT: 0
@@ -7169,6 +7164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balk
       objectReference: {fileID: 0}
+    - target: {fileID: 816003433618742771, guid: f03adedcab115f54680c9930ca5a532a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2232369789427374551, guid: f03adedcab115f54680c9930ca5a532a, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -7183,7 +7182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8836728850475711093, guid: f03adedcab115f54680c9930ca5a532a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.088
+      value: -8.11
       objectReference: {fileID: 0}
     - target: {fileID: 8836728850475711093, guid: f03adedcab115f54680c9930ca5a532a, type: 3}
       propertyPath: m_LocalPosition.y

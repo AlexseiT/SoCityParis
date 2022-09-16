@@ -6,8 +6,12 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 internal class WeaponRotateController : MonoBehaviour
 {
     [SerializeField] private Transform _shouldTr;
-    [SerializeField] private PlayerMover _player;
+    [SerializeField] private IFliper _player;
     private bool _checkFlip = true;
+    private void Start()
+    {
+        _player = GetComponentInParent<IFliper>();
+    }
     private void Update()
     {
 
